@@ -1,6 +1,8 @@
 # My Solutions to LeetCode Algorithm Problems (1st ver)
 
-- This repo targets to pass all unlocked LeetCode Algorithm problems (focus on accuracy more than efficiency).
+- This repo targets to pass all unlocked
+  <a href="https://leetcode.com/problemset/algorithms/">LeetCode Algorithm Problems</a>
+  (focus on accuracy more than efficiency).
 <br><br>
 - All of them passed the lower bound test of LeetCode grader.
 <br><br>
