@@ -1,4 +1,5 @@
-# My Solutions to LeetCode Algorithm Problems (1st ver)
+# My Solutions
+## To LeetCode Algorithm Problems (1st ver)
 
 - This repo targets to pass all unlocked
   <a href="https://leetcode.com/problemset/algorithms/">LeetCode Algorithm Problems</a>
