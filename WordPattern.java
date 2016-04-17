@@ -19,21 +19,17 @@ public class Solution {
         if (pattern.length() != words.length) return false;
 
         Map<String, Character> hashMap = new HashMap<String, Character>();
-        StringBuilder comparePat = new StringBuilder();
-        int tracker = 0;
+        char charInPat = '';
 
-        while (tracker < pattern.length()) {
-            if (hashMap.containsKey(words[tracker])) {
-                comparePat.append(hashMap.get(words[tracker])+"");
+        for (int i = 0; i < pattern.length(); i++) {
+            charInPat = pattern.charAt(i);
+            if (hashMap.containsKey(words[i])) {
+                if (hashMap.get(words[i]) != charInPat) return false;
             } else {
-                if (hashMap.containsValue(pattern.charAt(tracker))) return false;
-                hashMap.put(words[tracker], pattern.charAt(tracker));
-                comparePat.append(pattern.charAt(tracker)+"");
+                if (hashMap.containsValue(charInPat)) return false;
+                hashMap.put(words[i], charInPat);
             }
-            tracker++;
         }
-
-        if (comparePat.toString().equals(pattern)) return true;
-        return false;
+        return true;
     }
 }
