@@ -7,7 +7,7 @@
 // All 20 test cases are passed, 21ms solution
 // contains duplicate code, will optimize in the future
 
-public static List<Integer> topKFrequent(int[] nums, int k) {
+public List<Integer> topKFrequent(int[] nums, int k) {
     int count = 1;
     List<Integer> topN = new ArrayList<Integer>();
     Map<Integer, ArrayList<Integer>> sortedMap = new TreeMap<Integer, ArrayList<Integer>>();
